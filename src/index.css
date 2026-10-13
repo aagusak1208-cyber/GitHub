@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #030712;
+  overflow-x: hidden;
+}
+
+/* Smooth transitions for planet interactions */
+svg g {
+  transition: transform 0.1s ease;
+}
+
+svg g:hover circle:not([fill="transparent"]) {
+  filter: brightness(1.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a6a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a8a;
+}
